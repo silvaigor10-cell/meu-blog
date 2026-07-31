@@ -1,17 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downhill</title>
-<style>head{background-color: dodgerblue;}</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FUTEBOL</title>
 
+<style>
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background-color: #d9d9d9;
+}
 
+header {
+background-color: #819c99;
+color: #beb8b8;
+text-align: center;
+max-width: 800px;
+margin: 20px auto 0;
+border: solid 1px #819c99;
+padding: 16px;
+}
+
+main {
+background-color: #24302b;
+color: white;
+max-width: 800px;
+margin: 0 auto 20px;
+padding: 20px;
+border-radius: 8px;
+}
+
+img {
+max-width: 100%;
+height: auto; /* <-- Correção importante */
+border-radius: 8px;
+margin: 10px 0;
+}
+
+.conteudo {
+line-height: 1.8;
+}
+
+.artigo-autor {
+font-weight: bold;
+margin-top: 20px;
+color: #a8c4c0;
+}
+
+button {
+font-size: 24px;
+padding: 8px 16px;
+background-color: #819c99;
+color: white;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+margin-top: 15px;
+}
+
+button:hover {
+background-color: #5f7a77;
+}
+</style>
 </head>
+
 <body>
- <h1> meu blog </h1>   
- <p> vou falar um pouco sobre este asunto, downhill </p>
- <main> downhill é um esporte que se pratca com bike fazendo loucura e adrenalina </main>
+
+<header>
+<h1>FUTEBOL</h1>
+<img src="cris.png"alt="Imagem de futebol">
+</header>
+
+<main>
+<div class="conteudo">
+<p><strong>Por um Fã de futebol</strong></p>
+
+<p>
+O futebol moderno nasceu na inglaterra, com destaque da criaçao das primeiras regras oficiais em 1863
+</p>
+
+<h2>Futebol: tudo sobre sua história</h2>
+
+<p>
+Pelé, o unico jogador a vencer 3 copas do mundo(1958, 1962, 1970)
+</p>
+
+<p class="artigo-autor">Por: IGOR</p>
+<button>👍🏻<span>0</span></button>
+<button>👎🏻</button>
+</div>
+</main>
 
 </body>
-</html>
+<script>
+const botoes = document.querySelectorAll("button");//variável para acessar o botão.
+botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
+botoes.forEach(function(botao){
+
+function botaoClicado() { //cria uma função chamada botaoClicado.
+console.log("fui clicado");// exibe uma mensagem no console.
+let texto = botao.querySelectorAll("span");////seleciona o elemento "span" que esta dentro do botão e o guarda na variavel texto.
+texto.textContent++;// soma 1 ao valor atual. Assim, o contador aumenta a cada clique.
+
+   }
+})
+
+</script>
+</html
