@@ -86,25 +86,25 @@ O futebol moderno nasceu na inglaterra, com destaque da criaçao das primeiras r
 Pelé, o unico jogador a vencer 3 copas do mundo(1958, 1962, 1970)
 </p>
 
-<p class="artigo-autor">Por: IGOR</p>
-<button>👍🏻<span>0</span></button>
-<button>👎🏻</button>
-</div>
-</main>
+ <p class="autor"> Por: igor</p>
+        <p> o melhor esporte do mundo!</p>      
+        <button>👍<span>0</span></button>
+        <button>👎<span>0</span></button>
+</main>          
 
 </body>
 <script>
-const botoes = document.querySelectorAll("button");//variável para acessar o botão.
-botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
-botoes.forEach(function(botao){
+    const botoes = document.querySelectorAll("button");//variável para acessar o botão
 
-function botaoClicado() { //cria uma função chamada botaoClicado.
+    botoes.forEach(function(botao){
+    botao.addEventListener("click", botaoClicado);//quando acontecer um clique, será executada uma função chamada botaoClicado.
+
+    function botaoClicado() {//cria uma função chamada botaoClicado.
 console.log("fui clicado");// exibe uma mensagem no console.
-let texto = botao.querySelectorAll("span");////seleciona o elemento "span" que esta dentro do botão e o guarda na variavel texto.
-texto.textContent++;// soma 1 ao valor atual. Assim, o contador aumenta a cada clique.
-
-   }
-})
-
+let texto = botao.querySelector("span");///seleciona o elemento "span" que esta dentro do botão e o guarda na variavel texto.
+texto.textContent++;//soma 1 ao valor atual. Assim, o contador aumenta a cada clique.
+}
+}
+)
 </script>
-</html
+</html>
